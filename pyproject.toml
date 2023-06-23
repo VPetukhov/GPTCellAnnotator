@@ -1,0 +1,20 @@
+[project]
+name = "gptcellannotator"
+description = "scRNA-seq cell type annotation using OpenAI GPT"
+version = "0.1.0"
+authors = [
+    { name = "Viktor Petukhov", email = "viktor.petukhov+gh@pm.me" }
+]
+requires-python = ">= 3.8"
+dependencies = [
+    "numpy>=1.17.0",
+    "pandas>=1.0",
+    "scanpy",
+    "tqdm>=4.0",
+    "scikit-learn>=0.23",
+    "openai>=0.23.0"
+]
+
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit_core >=3.2,<4"]
