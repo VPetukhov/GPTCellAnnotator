@@ -10,6 +10,8 @@ pip install -e "git+https://github.com/VPetukhov/GPTCellAnnotator.git"
 
 ## Usage
 
+For a full usage example see [auto_annotation.ipynb](./examples/auto_annotation.ipynb).
+
 ### Set OpenAI key
 
 The package requires you to have an OpenAI API key. You can get one [here](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key). Once you have it, you can set it in your notebook to `openai.api_key`. You can save it to a `.env` file of your project and then use [`python-dotenv`](https://pypi.org/project/python-dotenv/) to read it to an environment variable:
