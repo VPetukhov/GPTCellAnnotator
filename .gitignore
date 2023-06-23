@@ -1,0 +1,13 @@
+.idea
+.history
+.ipynb_checkpoints
+.vscode
+__pycache__
+
+data
+cache
+models
+wandb
+env
+
+config.py
