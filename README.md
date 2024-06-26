@@ -5,7 +5,7 @@ This package provides a wrapper around [scanpy](https://github.com/theislab/scan
 ## Installation
 
 ```bash
-pip install -e "git+https://github.com/VPetukhov/GPTCellAnnotator.git"
+pip install "git+https://github.com/VPetukhov/GPTCellAnnotator.git"
 ```
 
 ## Usage
