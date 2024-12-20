@@ -1,7 +1,7 @@
 [project]
 name = "gptcellannotator"
 description = "scRNA-seq cell type annotation using OpenAI GPT"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
     { name = "Viktor Petukhov", email = "viktor.petukhov+gh@pm.me" }
 ]
