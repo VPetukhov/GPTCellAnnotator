@@ -6,13 +6,13 @@ from tqdm.auto import tqdm
 
 
 def get_specificity(genes: str, clust_mask: np.array, ad: sc.AnnData):
-    expr_mask = (ad.raw[:, genes].X > 0).A
+    expr_mask = (ad.raw[:, genes].X > 0).toarray()
     fpr = np.sum(expr_mask & np.atleast_2d(~clust_mask).T, axis=0) / np.sum(~clust_mask)
     return 1 - fpr
 
 
 def get_auc(genes: str, clust_mask: np.array, ad: sc.AnnData):
-    return np.array([roc_auc_score(clust_mask, ad.raw[:, g].X.A[:,0]) for g in genes])
+    return np.array([roc_auc_score(clust_mask, ad.raw[:, g].X.toarray()[:,0]) for g in genes])
 
 
 def get_markers_per_cluster(
